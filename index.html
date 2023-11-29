@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taking Transformers.js Object Detection demo and adding some stuffs</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Hugging Transformers Computer Vision Pipelines demo:</h1>
+        <label class="custom-file-upload">
+            <input id="file-upload" type="file" accept="image/*" />
+            <img class="upload-icon" src="https://huggingface.co/datasets/Xenova/transformers.js-docs/resolve/main/upload-icon.png" />
+            Upload image
+        </label>
+        <!--<form>
+            <label>Use image segmentation:</label>
+            <input type="checkbox" id="usesegmentation" name="usesegmentation" value="false">
+        </form>-->
+        <div id="image-container"></div>
+        <!--<canvas id="imageCanvas" width="400" height="400"></canvas>-->
+        <p id="status"></p>
+        <div id="details">
+            <table class="hide">
+                <thead>
+                    <th>Description</th>
+                    <th>Label</th>
+                    <th>position xmax</th>
+                    <th>position xmin</th>
+                    <th>position ymax</th>
+                    <th>position ymin</th>
+                </thead>
+                <tbody id="tableContent">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
